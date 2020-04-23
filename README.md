@@ -18,7 +18,7 @@
 
 [2️⃣ 로그인 화면 구현]()
 
-<img src="https://user-images.githubusercontent.com/60260284/80088241-32611300-8597-11ea-88f1-7aff4ded3ad5.png" width="100%" height = "">
+<img src="https://user-images.githubusercontent.com/60260284/80088448-7d7b2600-8597-11ea-8e7d-da556f49b1e5.png" width="100%" height = "">
 
 
 
