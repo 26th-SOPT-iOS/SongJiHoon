@@ -34,6 +34,32 @@
 
 ---
 
+
+~~~Swift
+
+    private func setLabels(){
+        
+        
+        guard let name = self.userid else {return}
+        guard let pw = self.userpw else {return}
+        
+        
+        nameLabel.text = name
+        passwordLabel.text = pw
+        
+    }
+
+
+~~~
+
+방금 전달받은 데이터를 <code> guard let </code>로 선언한 변수에 넣어주고 <br>
+해당 Label.text에 넣어준다!
+
+여기서 guard let은 오류가 발생했을 시 예외 처리를 해주는 <code> return </code> 구문이 존재하는 형태.
+
+
+---
+
 ##  기타 에러 핸들링
 
 " this class is not key value coding-compliant for the key singupIdTextField.'<br>
