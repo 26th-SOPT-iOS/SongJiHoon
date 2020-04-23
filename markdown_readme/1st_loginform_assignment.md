@@ -2,7 +2,7 @@
 
 # 데이터 전달을 이용한 로그인 폼 만들기
 
-[이동하기]()
+[이동하기](https://github.com/26th-SOPT-iOS/SongJiHoon/tree/master/1st_week/SOPT_firstWeek_assignment_2)
 
 ##  다른  viewController로 데이터 전달하기
 
