@@ -37,8 +37,10 @@
 ##  기타 에러 핸들링
 
 " this class is not key value coding-compliant for the key singupIdTextField.'<br>
-라는 오류 발생해서, 한참 찾았었는데 결국 변수명 바꾸고 다시 제대로 매칭 안 한 나의 불상사...인걸로..<br>
-___
+라는 오류 발생해서, 한참 찾았었는데 결국 변수명 바꾸고 다시 제대로 매칭 안 한 나의 불상사...인걸로..<br><br><br>
+
+
+
 
 " Warning: Attempt to present * on * which is already presenting (null) "
 
