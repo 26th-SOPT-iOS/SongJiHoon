@@ -41,6 +41,15 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func toScrollView(_ sender: Any) {
+        guard let toscrollView = self.storyboard?.instantiateViewController(identifier: "scrollViewController") else {return}
+              
+              
+              self.navigationController?.pushViewController(toscrollView, animated: true)
+              
+          
+        
+    }
     
     
     func setTextField(){

@@ -16,6 +16,16 @@ class SignupViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     
+    
+    @IBAction func toScrollView(_ sender: Any) {
+        guard let toscrollView = self.storyboard?.instantiateViewController(identifier: "scrollViewController") else {return}
+                
+                
+                self.navigationController?.pushViewController(toscrollView, animated: true)
+    }
+    
+    
+    
     override func viewDidLoad() {
         
         setTextField()
