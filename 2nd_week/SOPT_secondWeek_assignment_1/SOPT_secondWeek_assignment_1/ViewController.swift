@@ -29,27 +29,31 @@ class ViewController: UIViewController {
     @IBOutlet weak var signupButton: UILabel!
     
     
+    
+    var handle:Int = 0
+    
+
+    
+    
     override func viewDidLoad() {
         
-        setTextField()
-        setLabel()
         
-        super.viewDidLoad()
+    
+        setTextField()
         
         self.setNavigationBar()
+
+        
+        super.viewDidLoad()
+        setLabel()
+        
+  
+        
         // Do any additional setup after loading the view.
     }
 
 
-    @IBAction func toScrollView(_ sender: Any) {
-        guard let toscrollView = self.storyboard?.instantiateViewController(identifier: "scrollViewController") else {return}
-              
-              
-              self.navigationController?.pushViewController(toscrollView, animated: true)
-              
-          
-        
-    }
+
     
     
     func setTextField(){
@@ -73,6 +77,7 @@ class ViewController: UIViewController {
     @objc func labelTapped(_ sender: UITapGestureRecognizer){
         
         guard let nextView = self.storyboard?.instantiateViewController(identifier: "signupViewController") else {return}
+        
         
         
         self.navigationController?.pushViewController(nextView, animated: true)

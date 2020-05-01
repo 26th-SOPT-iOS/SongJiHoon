@@ -14,23 +14,20 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+
     @IBOutlet weak var loginButton: UIButton!
-    
-    
-    @IBAction func toScrollView(_ sender: Any) {
-        guard let toscrollView = self.storyboard?.instantiateViewController(identifier: "scrollViewController") else {return}
-                
-                
-                self.navigationController?.pushViewController(toscrollView, animated: true)
-    }
     
     
     
     override func viewDidLoad() {
-        
+    
+        self.navigationController?.navigationBar.isHidden = false      // 네비게이션 바 숨기기
+
         setTextField()
         super.viewDidLoad()
         self.navigationController?.navigationBar.topItem?.title = "" // clear defaut value("BACK" text!)
+        
+        
 
 
        
@@ -49,6 +46,10 @@ class SignupViewController: UIViewController {
         emailTextField.layer.cornerRadius = 22
         passwordTextField.layer.cornerRadius = 22
         loginButton.layer.cornerRadius=24
+        
+        
+        
+        
         
         
     }

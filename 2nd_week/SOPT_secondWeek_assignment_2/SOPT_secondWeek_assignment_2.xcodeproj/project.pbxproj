@@ -7,31 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD862A252458369B00040099 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD862A242458369B00040099 /* ScrollViewController.swift */; };
-		FD862A6B245BEF4C00040099 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD862A6A245BEF4C00040099 /* Main.storyboard */; };
-		FDDF86D52456BED900DE3BCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDF86D42456BED900DE3BCC /* AppDelegate.swift */; };
-		FDDF86D72456BED900DE3BCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDF86D62456BED900DE3BCC /* SceneDelegate.swift */; };
-		FDDF86D92456BED900DE3BCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDF86D82456BED900DE3BCC /* ViewController.swift */; };
-		FDDF86DE2456BEDC00DE3BCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDDF86DD2456BEDC00DE3BCC /* Assets.xcassets */; };
-		FDDF86E12456BEDC00DE3BCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDF86DF2456BEDC00DE3BCC /* LaunchScreen.storyboard */; };
-		FDDF86E92456DF5700DE3BCC /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDF86E82456DF5700DE3BCC /* SignupViewController.swift */; };
+		FD862A33245844D700040099 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD862A32245844D700040099 /* AppDelegate.swift */; };
+		FD862A35245844D700040099 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD862A34245844D700040099 /* SceneDelegate.swift */; };
+		FD862A37245844D700040099 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD862A36245844D700040099 /* ViewController.swift */; };
+		FD862A3A245844D700040099 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD862A38245844D700040099 /* Main.storyboard */; };
+		FD862A3C245844D900040099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD862A3B245844D900040099 /* Assets.xcassets */; };
+		FD862A3F245844D900040099 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD862A3D245844D900040099 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FD862A242458369B00040099 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
-		FD862A6A245BEF4C00040099 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		FDDF86D12456BED900DE3BCC /* SOPT_secondWeek_assignment_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPT_secondWeek_assignment_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDDF86D42456BED900DE3BCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FDDF86D62456BED900DE3BCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FDDF86D82456BED900DE3BCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FDDF86DD2456BEDC00DE3BCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FDDF86E02456BEDC00DE3BCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FDDF86E22456BEDC00DE3BCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDDF86E82456DF5700DE3BCC /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		FD862A2F245844D700040099 /* SOPT_secondWeek_assignment_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPT_secondWeek_assignment_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD862A32245844D700040099 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD862A34245844D700040099 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FD862A36245844D700040099 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD862A39245844D700040099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD862A3B245844D900040099 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD862A3E245844D900040099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD862A40245844D900040099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FDDF86CE2456BED900DE3BCC /* Frameworks */ = {
+		FD862A2C245844D700040099 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,74 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FDDF86C82456BED900DE3BCC = {
+		FD862A26245844D700040099 = {
 			isa = PBXGroup;
 			children = (
-				FDDF86D32456BED900DE3BCC /* SOPT_secondWeek_assignment_1 */,
-				FDDF86D22456BED900DE3BCC /* Products */,
+				FD862A31245844D700040099 /* SOPT_secondWeek_assignment_2 */,
+				FD862A30245844D700040099 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FDDF86D22456BED900DE3BCC /* Products */ = {
+		FD862A30245844D700040099 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FDDF86D12456BED900DE3BCC /* SOPT_secondWeek_assignment_1.app */,
+				FD862A2F245844D700040099 /* SOPT_secondWeek_assignment_2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FDDF86D32456BED900DE3BCC /* SOPT_secondWeek_assignment_1 */ = {
+		FD862A31245844D700040099 /* SOPT_secondWeek_assignment_2 */ = {
 			isa = PBXGroup;
 			children = (
-				FDDF86D42456BED900DE3BCC /* AppDelegate.swift */,
-				FD862A6A245BEF4C00040099 /* Main.storyboard */,
-				FDDF86D62456BED900DE3BCC /* SceneDelegate.swift */,
-				FDDF86D82456BED900DE3BCC /* ViewController.swift */,
-				FDDF86E82456DF5700DE3BCC /* SignupViewController.swift */,
-				FD862A242458369B00040099 /* ScrollViewController.swift */,
-				FDDF86DD2456BEDC00DE3BCC /* Assets.xcassets */,
-				FDDF86DF2456BEDC00DE3BCC /* LaunchScreen.storyboard */,
-				FDDF86E22456BEDC00DE3BCC /* Info.plist */,
+				FD862A32245844D700040099 /* AppDelegate.swift */,
+				FD862A34245844D700040099 /* SceneDelegate.swift */,
+				FD862A36245844D700040099 /* ViewController.swift */,
+				FD862A38245844D700040099 /* Main.storyboard */,
+				FD862A3B245844D900040099 /* Assets.xcassets */,
+				FD862A3D245844D900040099 /* LaunchScreen.storyboard */,
+				FD862A40245844D900040099 /* Info.plist */,
 			);
-			path = SOPT_secondWeek_assignment_1;
+			path = SOPT_secondWeek_assignment_2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FDDF86D02456BED900DE3BCC /* SOPT_secondWeek_assignment_1 */ = {
+		FD862A2E245844D700040099 /* SOPT_secondWeek_assignment_2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FDDF86E52456BEDC00DE3BCC /* Build configuration list for PBXNativeTarget "SOPT_secondWeek_assignment_1" */;
+			buildConfigurationList = FD862A43245844D900040099 /* Build configuration list for PBXNativeTarget "SOPT_secondWeek_assignment_2" */;
 			buildPhases = (
-				FDDF86CD2456BED900DE3BCC /* Sources */,
-				FDDF86CE2456BED900DE3BCC /* Frameworks */,
-				FDDF86CF2456BED900DE3BCC /* Resources */,
+				FD862A2B245844D700040099 /* Sources */,
+				FD862A2C245844D700040099 /* Frameworks */,
+				FD862A2D245844D700040099 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SOPT_secondWeek_assignment_1;
-			productName = SOPT_secondWeek_assignment_1;
-			productReference = FDDF86D12456BED900DE3BCC /* SOPT_secondWeek_assignment_1.app */;
+			name = SOPT_secondWeek_assignment_2;
+			productName = SOPT_secondWeek_assignment_2;
+			productReference = FD862A2F245844D700040099 /* SOPT_secondWeek_assignment_2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FDDF86C92456BED900DE3BCC /* Project object */ = {
+		FD862A27245844D700040099 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "송지훈";
 				TargetAttributes = {
-					FDDF86D02456BED900DE3BCC = {
+					FD862A2E245844D700040099 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
 			};
-			buildConfigurationList = FDDF86CC2456BED900DE3BCC /* Build configuration list for PBXProject "SOPT_secondWeek_assignment_1" */;
+			buildConfigurationList = FD862A2A245844D700040099 /* Build configuration list for PBXProject "SOPT_secondWeek_assignment_2" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,49 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = FDDF86C82456BED900DE3BCC;
-			productRefGroup = FDDF86D22456BED900DE3BCC /* Products */;
+			mainGroup = FD862A26245844D700040099;
+			productRefGroup = FD862A30245844D700040099 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FDDF86D02456BED900DE3BCC /* SOPT_secondWeek_assignment_1 */,
+				FD862A2E245844D700040099 /* SOPT_secondWeek_assignment_2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FDDF86CF2456BED900DE3BCC /* Resources */ = {
+		FD862A2D245844D700040099 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD862A6B245BEF4C00040099 /* Main.storyboard in Resources */,
-				FDDF86E12456BEDC00DE3BCC /* LaunchScreen.storyboard in Resources */,
-				FDDF86DE2456BEDC00DE3BCC /* Assets.xcassets in Resources */,
+				FD862A3F245844D900040099 /* LaunchScreen.storyboard in Resources */,
+				FD862A3C245844D900040099 /* Assets.xcassets in Resources */,
+				FD862A3A245844D700040099 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FDDF86CD2456BED900DE3BCC /* Sources */ = {
+		FD862A2B245844D700040099 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDDF86D92456BED900DE3BCC /* ViewController.swift in Sources */,
-				FDDF86D52456BED900DE3BCC /* AppDelegate.swift in Sources */,
-				FD862A252458369B00040099 /* ScrollViewController.swift in Sources */,
-				FDDF86E92456DF5700DE3BCC /* SignupViewController.swift in Sources */,
-				FDDF86D72456BED900DE3BCC /* SceneDelegate.swift in Sources */,
+				FD862A37245844D700040099 /* ViewController.swift in Sources */,
+				FD862A33245844D700040099 /* AppDelegate.swift in Sources */,
+				FD862A35245844D700040099 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FDDF86DF2456BEDC00DE3BCC /* LaunchScreen.storyboard */ = {
+		FD862A38245844D700040099 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FDDF86E02456BEDC00DE3BCC /* Base */,
+				FD862A39245844D700040099 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD862A3D245844D900040099 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD862A3E245844D900040099 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FDDF86E32456BEDC00DE3BCC /* Debug */ = {
+		FD862A41245844D900040099 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		FDDF86E42456BEDC00DE3BCC /* Release */ = {
+		FD862A42245844D900040099 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,36 +280,36 @@
 			};
 			name = Release;
 		};
-		FDDF86E62456BEDC00DE3BCC /* Debug */ = {
+		FD862A44245844D900040099 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9D5M5DM3Y;
-				INFOPLIST_FILE = SOPT_secondWeek_assignment_1/Info.plist;
+				INFOPLIST_FILE = SOPT_secondWeek_assignment_2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "kone.SOPT-secondWeek-assignment-1";
+				PRODUCT_BUNDLE_IDENTIFIER = "kone.SOPT-secondWeek-assignment-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		FDDF86E72456BEDC00DE3BCC /* Release */ = {
+		FD862A45245844D900040099 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9D5M5DM3Y;
-				INFOPLIST_FILE = SOPT_secondWeek_assignment_1/Info.plist;
+				INFOPLIST_FILE = SOPT_secondWeek_assignment_2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "kone.SOPT-secondWeek-assignment-1";
+				PRODUCT_BUNDLE_IDENTIFIER = "kone.SOPT-secondWeek-assignment-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,25 +319,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FDDF86CC2456BED900DE3BCC /* Build configuration list for PBXProject "SOPT_secondWeek_assignment_1" */ = {
+		FD862A2A245844D700040099 /* Build configuration list for PBXProject "SOPT_secondWeek_assignment_2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDDF86E32456BEDC00DE3BCC /* Debug */,
-				FDDF86E42456BEDC00DE3BCC /* Release */,
+				FD862A41245844D900040099 /* Debug */,
+				FD862A42245844D900040099 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FDDF86E52456BEDC00DE3BCC /* Build configuration list for PBXNativeTarget "SOPT_secondWeek_assignment_1" */ = {
+		FD862A43245844D900040099 /* Build configuration list for PBXNativeTarget "SOPT_secondWeek_assignment_2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDDF86E62456BEDC00DE3BCC /* Debug */,
-				FDDF86E72456BEDC00DE3BCC /* Release */,
+				FD862A44245844D900040099 /* Debug */,
+				FD862A45245844D900040099 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FDDF86C92456BED900DE3BCC /* Project object */;
+	rootObject = FD862A27245844D700040099 /* Project object */;
 }

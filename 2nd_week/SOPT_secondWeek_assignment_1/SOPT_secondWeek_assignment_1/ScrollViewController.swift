@@ -9,63 +9,70 @@
 import UIKit
 
 
-private struct navi_Float{
-    
-    static let NaviBarHeightSmallState: CGFloat = 100
-    static let NaviBarHeightLargeState: CGFloat = 210
-    
-    // 네비게이션 바 상태별로 크기 다르게 설정하기
-    
-    static let ImageSizeForLargeState: CGFloat = 40
-    static let ImageSizeForSmallState: CGFloat = 32
-
-    static let ImageRightMargin: CGFloat = 0
-    static let ImageLeftMargin: CGFloat = 0
-    static let ImageBottomMarginForLargeState: CGFloat = 0
-    static let ImageBottomMarginForSmallState: CGFloat = 0
-    
-
-
-
-
-
-
-}
-
 
 
 
 class ScrollViewController: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    
+    @IBOutlet weak var headerImage: UIImageView!
+    
+    
     override func viewDidLoad() {
+        
+     
+        print(scrollView.contentOffset.y)
+        self.navigationController?.navigationBar.isHidden = true        // 네비게이션 바 숨기기
+        
+//        scrollInteraction()
+
+ 
         super.viewDidLoad()
         
-        setNavi()
+        scrollViewDidScroll(scrollView: scrollView)
+        
+        
+        
+        
+
+        
+
+
+    
         
         // Do any additional setup after loading the view.
     }
     
     
-    
-
-    func setNavi(){
-        
-        navigationController?.navigationBar.prefersLargeTitles = true
-        
-        let image = UIImage(named: "Sopt_navigationTitle")
-        navigationController?.navigationBar.setBackgroundImage(image, for: .default)
-        
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        var scaleFactor:CGFloat = 0.0
+        if scrollView.contentOffset.y < 0 {
+            scaleFactor = -scrollView.contentOffset.y
+        } else {
+            scaleFactor = 1.0
+        }
+        self.headerImage.transform = CGAffineTransform(scaleX: scaleFactor, y: scaleFactor)
     }
     
+    
+    
+ 
+    @IBAction func toLoginView(_ sender: Any) {
 
-    /*
-    // MARK: - Navigation
+        
+        
+        self.navigationController?.popToRootViewController(animated: true)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+  
+        
+
+        
     }
-    */
+
+
+    
+
 
 }
