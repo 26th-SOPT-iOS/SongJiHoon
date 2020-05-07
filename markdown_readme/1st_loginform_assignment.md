@@ -23,7 +23,6 @@ pwTextLabel.text = nil
 
 ```
 
-~~~
 
 <code>receiveViewController</code> 를 활용해 id/pw label에서 입력된 값을 <br>
 <code>UserinfoViewController</code> 에 전달 후,<br>
@@ -39,22 +38,22 @@ pwTextLabel.text = nil
 ### 입력한 부분을 넘겨주기
 
 
-```Swift
+~~~Swift
 
-private func setLabels(){
-        
-        
-    guard let name = self.userid else {return}
-    guard let pw = self.userpw else {return}
-        
-        
-    nameLabel.text = name
-    passwordLabel.text = pw
-        
-}
+            private func setLabels(){
 
 
-```
+                guard let name = self.userid else {return}
+                guard let pw = self.userpw else {return}
+
+
+                nameLabel.text = name
+                passwordLabel.text = pw
+
+            }
+
+~~~
+
 
 방금 전달받은 데이터를 <code> guard let </code>로 선언한 변수에 넣어주고 <br>
 해당 Label.text에 넣어준다!
