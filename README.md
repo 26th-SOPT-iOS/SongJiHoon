@@ -70,7 +70,7 @@ Auto Layout / StackView / ScrollView
 
 [2️⃣ Zeplin을 활용해서 AutoLayout 잡기](https://github.com/26th-SOPT-iOS/SongJiHoon/blob/master/markdown_readme/1st_loginform_assignment.md)
 
-
+<img src="https://user-images.githubusercontent.com/60260284/81263885-7534e780-907b-11ea-9d69-45e9293cddc5.gif" width="40%" height = "">
 
 
 

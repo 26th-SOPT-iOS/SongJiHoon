@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     func setButton(){
      
         for button in uiButton{
-            button.layer.cornerRadius = 0.25 * (button.layer.bounds.size.width + button.layer.bounds.size.height )
+            button.layer.cornerRadius = 0.5 * button.layer.bounds.size.width 
         }
     }
     

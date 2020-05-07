@@ -16,7 +16,7 @@ class ScrollViewController: UIViewController {
     
     let headerViewMaxHeight: CGFloat = 100
     let headerViewMinHeight: CGFloat = 0
-    let scrollTopEdgeInsets: CGFloat = 210
+
     
     
     @IBOutlet weak var headerImage: UIImageView!
@@ -90,11 +90,11 @@ extension ScrollViewController: UIScrollViewDelegate {
         let y :CGFloat = scrollView.contentOffset.y
  
         if y < 0 {
-            heightConstraint.constant = scrollTopEdgeInsets - y
+            heightConstraint.constant = 210 - y
             
         }else{
             
-            var height = scrollTopEdgeInsets - y
+            var height = 210 - y
             height = height > 88 ? height : 88
             heightConstraint.constant = height
             
