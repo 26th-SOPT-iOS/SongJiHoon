@@ -47,6 +47,8 @@ class ViewController: UIViewController {
         receiveViewController.userid = idTextLabel.text
         receiveViewController.userpw = pwTextLabel.text
         
+        
+        receiveViewController.modalPresentationStyle = .fullScreen
         self.present(receiveViewController, animated: true, completion: nil)
         
         

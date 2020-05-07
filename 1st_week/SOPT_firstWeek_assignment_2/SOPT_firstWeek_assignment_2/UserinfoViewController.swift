@@ -42,16 +42,27 @@ class UserinfoViewController: UIViewController {
         passwordLabel.text = pw
         
     }
-    
-    
-    @IBAction func backToMain(_ sender: Any) {
+
+    @IBAction func backToLogin(_ sender: Any) {
         
-        self.dismiss(animated: true, completion: nil)
+       
+        let navigationController = self.presentingViewController as?UINavigationController
+        
+        
+        
+        self.dismiss(animated:true){
+            _ = navigationController?.popViewController(animated: true)
+        }
+        
+    
+       
+       
+
+        
+        
+
     }
     
-    
-    
-
     /*
     // MARK: - Navigation
 

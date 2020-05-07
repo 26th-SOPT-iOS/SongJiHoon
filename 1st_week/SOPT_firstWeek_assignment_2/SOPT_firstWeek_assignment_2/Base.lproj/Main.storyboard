@@ -10,7 +10,7 @@
         <!--LOGIN-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SOPT_firstWeek_assignment_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="viewController" id="BYZ-38-t0r" customClass="ViewController" customModule="SOPT_firstWeek_assignment_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -207,13 +207,14 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="backToMain:" destination="Zcr-uM-xtS" eventType="touchUpInside" id="VfF-JZ-9MD"/>
+                                    <action selector="backToLogin:" destination="Zcr-uM-xtS" eventType="touchUpInside" id="PSd-cS-DXz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="qwg-5J-YJX"/>
                     </view>
+                    <navigationItem key="navigationItem" id="WiO-o1-mdj"/>
                     <connections>
                         <outlet property="nameLabel" destination="j7e-85-4SA" id="xfO-de-78V"/>
                         <outlet property="passwordLabel" destination="HTf-8H-DDK" id="1Ra-9g-xgm"/>
@@ -221,7 +222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xZ1-0h-vBi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2879.7101449275365" y="138.61607142857142"/>
+            <point key="canvasLocation" x="1441" y="999"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iLQ-DM-Bme">

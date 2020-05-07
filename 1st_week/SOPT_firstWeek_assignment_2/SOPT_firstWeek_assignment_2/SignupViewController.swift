@@ -40,6 +40,7 @@ class SignupViewController: UIViewController {
         receiveViewController.userid = signupIdTextField.text
         receiveViewController.userpw = signupPwTextField.text
         
+        receiveViewController.modalPresentationStyle = .fullScreen
         self.present(receiveViewController, animated: true, completion: nil)
         
         

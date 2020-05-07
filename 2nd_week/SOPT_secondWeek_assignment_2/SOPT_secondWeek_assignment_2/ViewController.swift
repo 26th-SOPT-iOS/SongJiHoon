@@ -18,8 +18,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         setButton()
-        // Do any additional setup after loading the view.
+
     }
 
     
