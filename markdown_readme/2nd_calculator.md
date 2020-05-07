@@ -7,7 +7,7 @@
 ##  IBOutlet Collection 활용하기
 
 
-<img src="https://user-images.githubusercontent.com/60260284/81264885-22f4c600-907d-11ea-802f-fd37ef0adc5a.png"" width="%" height = "">
+<img src="https://user-images.githubusercontent.com/60260284/81264885-22f4c600-907d-11ea-802f-fd37ef0adc5a.png">
 
 <img src="https://user-images.githubusercontent.com/60260284/81267172-fcd12500-9080-11ea-827d-e9b5fe358234.png" width="40%" height = "">
 
