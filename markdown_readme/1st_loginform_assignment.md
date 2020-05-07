@@ -6,20 +6,22 @@
 
 ##  다른  viewController로 데이터 전달하기
 
-~~~Swift
 
-        guard let receiveViewController =
+
+```Swift
+
+guard let receiveViewController =
             self.storyboard?.instantiateViewController(identifier: "userinfoViewController") as? UserinfoViewController else {return}
         
         
         
-        receiveViewController.userid = idTextLabel.text
-        receiveViewController.userpw = pwTextLabel.text
+receiveViewController.userid = idTextLabel.text
+receiveViewController.userpw = pwTextLabel.text
 
-        idTextLabel.text = nil
-        pwTextLabel.text = nil
+idTextLabel.text = nil
+pwTextLabel.text = nil
 
-
+```
 
 ~~~
 
@@ -34,29 +36,60 @@
 
 ---
 
-
-~~~Swift
-
-    private func setLabels(){
-        
-        
-        guard let name = self.userid else {return}
-        guard let pw = self.userpw else {return}
-        
-        
-        nameLabel.text = name
-        passwordLabel.text = pw
-        
-    }
+### 입력한 부분을 넘겨주기
 
 
-~~~
+```Swift
+
+private func setLabels(){
+        
+        
+    guard let name = self.userid else {return}
+    guard let pw = self.userpw else {return}
+        
+        
+    nameLabel.text = name
+    passwordLabel.text = pw
+        
+}
+
+
+```
 
 방금 전달받은 데이터를 <code> guard let </code>로 선언한 변수에 넣어주고 <br>
 해당 Label.text에 넣어준다!
 
 여기서 guard let은 오류가 발생했을 시 예외 처리를 해주는 <code> return </code> 구문이 존재하는 형태.
 
+---
+
+### 모달로 전달할 때 꽉 차게 전달
+
+```Swift
+receiveViewController.modalPresentationStyle = .fullScreen
+self.present(receiveViewController, animated: true, completion: nil)
+```
+
+
+IOS13 이후부터 modal 로 전달시 기본값이 맨 위에 부분은 남기고 올라오는 형식으로 변경 되었다.
+``` modalPresentationStyle = .fullScreen ``` 을 활용해서 꽉 차게 변경
+
+
+
+---
+###로그아웃 시 가입화면이 아닌 로그인 화면으로
+
+```Swift
+let navigationController = self.presentingViewController as?UINavigationController
+        
+               
+self.dismiss(animated:true){
+    _ = navigationController?.popViewController(animated: true)
+}
+```
+
+로그아웃 IBAction 부분에 ```popViewController``` 를 활용한 이벤트를 넣어줘서
+가장 첫번째 화면(로그인 부분)으로 넘어가도록 해준다.
 
 ---
 
