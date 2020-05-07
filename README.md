@@ -42,7 +42,7 @@ Navigation, Segue 를 활용한 화면 전환 / 화면간 데이터 전달<br><b
 
 [2️⃣ 로그인 화면 구현](https://github.com/26th-SOPT-iOS/SongJiHoon/blob/master/markdown_readme/1st_loginform_assignment.md)
 
-<img src="https://user-images.githubusercontent.com/60260284/81255505-c1c2f780-9068-11ea-9ace-00e635c40e33.gif)" width="40%" height = ""><br><br>
+<img src="https://user-images.githubusercontent.com/60260284/81256291-ffc11b00-906a-11ea-8c3b-c40225e14ca9.gif" width="40%">
 
 
 
@@ -57,16 +57,21 @@ Auto Layout / StackView / ScrollView
 
 🧑🏻‍💻과제 목록
 
+
+
 [1️⃣ Auto Layout 을 활용한 계산기](https://github.com/26th-SOPT-iOS/SongJiHoon/blob/master/markdown_readme/1st_navigation_assignment.md)
 
 
 
-
-
+<img src="https://user-images.githubusercontent.com/60260284/81260265-9c3beb00-9074-11ea-82b1-137fa3c7232c.gif" width="40%" height = "">
+<br>
+<br>
 
 
 [2️⃣ Zeplin을 활용해서 AutoLayout 잡기](https://github.com/26th-SOPT-iOS/SongJiHoon/blob/master/markdown_readme/1st_loginform_assignment.md)
 
+
+<img src="https://user-images.githubusercontent.com/60260284/81260963-1b7dee80-9076-11ea-970b-c9d3568e1728.gif" width="40%" height = "">
 
 
 
@@ -79,7 +84,6 @@ ________________
 
 
 🧑🏻‍💻과제 목록
-
 
 
 
