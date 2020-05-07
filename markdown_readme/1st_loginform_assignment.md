@@ -32,7 +32,7 @@ pwTextLabel.text = nil
 
 버튼을 눌러 전달 한 뒤에는, 다시 돌아왔을때 label이 비워져 있어야 하기 때문에 <br>
 <code>idTextLabel.text = nil</code> 처럼 nil 대입 (확실치 않음? 이 부분❓❓❓)<br>
-<br>
+
 ---
 
 ### 입력한 부분을 넘겨주기
@@ -59,7 +59,8 @@ passwordLabel.text = pw
 해당 Label.text에 넣어준다!
 
 여기서 guard let은 오류가 발생했을 시 예외 처리를 해주는 <code> return </code> 구문이 존재하는 형태.
-<br>
+
+
 ---
 
 ### 모달로 전달할 때 꽉 차게 전달
@@ -73,7 +74,8 @@ self.present(receiveViewController, animated: true, completion: nil)
 IOS13 이후부터 modal 로 전달시 기본값이 맨 위에 부분은 남기고 올라오는 형식으로 변경 되었다.
 ``` modalPresentationStyle = .fullScreen ``` 을 활용해서 꽉 차게 변경
 
-<br>
+
+
 
 ---
 
