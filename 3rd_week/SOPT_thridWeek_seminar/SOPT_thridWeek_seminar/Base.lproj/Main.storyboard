@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SOPT_thridWeek_seminar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BIk-Ox-aRf">
+                                <rect key="frame" x="0.0" y="612" width="414" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="SIS-3g-a6X"/>
+                                </constraints>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CXS-h5-IUV">
+                                <rect key="frame" x="0.0" y="104" width="414" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQG-Eh-KeB">
+                                <rect key="frame" x="40" y="345" width="29.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUy-ek-aNh">
+                                <rect key="frame" x="40" y="386" width="29.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxY-IZ-94P">
+                                <rect key="frame" x="99.5" y="345" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTc-cu-52V">
+                                <rect key="frame" x="99.5" y="365" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MTc-cu-52V" firstAttribute="leading" secondItem="cUy-ek-aNh" secondAttribute="trailing" constant="30" id="8bw-R3-Gw2"/>
+                            <constraint firstItem="cUy-ek-aNh" firstAttribute="top" secondItem="ZQG-Eh-KeB" secondAttribute="bottom" constant="20" id="BKn-n2-4vx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BIk-Ox-aRf" secondAttribute="bottom" constant="50" id="FKg-2d-40Y"/>
+                            <constraint firstItem="CXS-h5-IUV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KmK-wg-d4S"/>
+                            <constraint firstItem="CXS-h5-IUV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="QAf-CO-vUt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MTc-cu-52V" secondAttribute="trailing" symbolic="YES" id="UwP-kR-9lm"/>
+                            <constraint firstItem="BIk-Ox-aRf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VAB-pY-55P"/>
+                            <constraint firstItem="ZQG-Eh-KeB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="VzV-4G-hbA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xxY-IZ-94P" secondAttribute="trailing" symbolic="YES" id="Z9T-yV-9MI"/>
+                            <constraint firstItem="cUy-ek-aNh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="bZ4-02-h9r"/>
+                            <constraint firstItem="BIk-Ox-aRf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="c2n-K9-Bff"/>
+                            <constraint firstItem="MTc-cu-52V" firstAttribute="top" secondItem="xxY-IZ-94P" secondAttribute="bottom" constant="20" id="coq-rO-Ecj"/>
+                            <constraint firstItem="CXS-h5-IUV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="d3p-9c-JA3"/>
+                            <constraint firstItem="xxY-IZ-94P" firstAttribute="leading" secondItem="ZQG-Eh-KeB" secondAttribute="trailing" constant="30" id="g8s-va-EGg"/>
+                            <constraint firstItem="xxY-IZ-94P" firstAttribute="top" secondItem="CXS-h5-IUV" secondAttribute="bottom" constant="25" id="n7W-0M-DBS"/>
+                            <constraint firstItem="ZQG-Eh-KeB" firstAttribute="top" secondItem="CXS-h5-IUV" secondAttribute="bottom" constant="25" id="wKL-AJ-tzM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="artistLabel" destination="MTc-cu-52V" id="1qh-YN-7Tf"/>
+                        <outlet property="imageView" destination="BIk-Ox-aRf" id="p1Z-te-TYK"/>
+                        <outlet property="namePicker" destination="CXS-h5-IUV" id="R6j-Kb-s2f"/>
+                        <outlet property="titleLabel" destination="xxY-IZ-94P" id="7R5-f3-0x0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
