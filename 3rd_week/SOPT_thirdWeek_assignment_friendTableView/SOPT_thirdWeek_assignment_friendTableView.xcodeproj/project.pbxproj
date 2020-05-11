@@ -14,6 +14,8 @@
 		FD0E593C2468202500E3A95C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0E593B2468202500E3A95C /* Assets.xcassets */; };
 		FD0E593F2468202500E3A95C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0E593D2468202500E3A95C /* LaunchScreen.storyboard */; };
 		FD0E59492468252700E3A95C /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0E59482468252700E3A95C /* ScrollViewController.swift */; };
+		FD10096F246904AB008EA9F3 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD10096E246904AB008EA9F3 /* FriendCell.swift */; };
+		FD100971246904F2008EA9F3 /* FriendInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD100970246904F2008EA9F3 /* FriendInformation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		FD0E593E2468202500E3A95C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD0E59402468202500E3A95C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD0E59482468252700E3A95C /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScrollViewController.swift; path = ../ScrollViewController.swift; sourceTree = "<group>"; };
+		FD10096E246904AB008EA9F3 /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		FD100970246904F2008EA9F3 /* FriendInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendInformation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				FD0E59342468202300E3A95C /* SceneDelegate.swift */,
 				FD0E59362468202300E3A95C /* ViewController.swift */,
 				FD0E59382468202300E3A95C /* Main.storyboard */,
+				FD10096E246904AB008EA9F3 /* FriendCell.swift */,
+				FD100970246904F2008EA9F3 /* FriendInformation.swift */,
 				FD0E593B2468202500E3A95C /* Assets.xcassets */,
 				FD0E593D2468202500E3A95C /* LaunchScreen.storyboard */,
 				FD0E59482468252700E3A95C /* ScrollViewController.swift */,
@@ -143,8 +149,10 @@
 			files = (
 				FD0E59372468202300E3A95C /* ViewController.swift in Sources */,
 				FD0E59332468202300E3A95C /* AppDelegate.swift in Sources */,
+				FD100971246904F2008EA9F3 /* FriendInformation.swift in Sources */,
 				FD0E59352468202300E3A95C /* SceneDelegate.swift in Sources */,
 				FD0E59492468252700E3A95C /* ScrollViewController.swift in Sources */,
+				FD10096F246904AB008EA9F3 /* FriendCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
