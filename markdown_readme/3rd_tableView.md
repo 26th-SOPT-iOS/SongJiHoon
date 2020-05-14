@@ -20,8 +20,8 @@ StoryBoard 내에서 Tab Bar Controller > Tab Bar 에서
 
 <img width="259" alt="스크린샷 2020-05-14 오후 7 18 47" src="https://user-images.githubusercontent.com/60260284/81922883-bd25b280-9617-11ea-8ff9-c04985f0963f.png">
 
-tintColor 속성을 검은색으로 변경하니 
-<img width="376" alt="스크린샷 2020-05-14 오후 7 19 30" src="https://user-images.githubusercontent.com/60260284/81922943-d9c1ea80-9617-11ea-8813-fae107d3e653.png">
+tintColor 속성을 검은색으로 변경하니 <br>
+<img width="376" alt="스크린샷 2020-05-14 오후 7 19 30" src="https://user-images.githubusercontent.com/60260284/81922943-d9c1ea80-9617-11ea-8813-fae107d3e653.png"> <br>
 성공적으로 변했다!
 
 ___
@@ -135,7 +135,8 @@ ___
         
         
     }
-    
+
+```
 
 기본 UI 중에서 actionsheet 를 활용해서 <code> UIAlertAction </code> 를 생성 한 뒤,
 <code> present </code> 에 <code> UIAlertController </code> 를 넣어줘서 메뉴가 올라오도록 한다!
