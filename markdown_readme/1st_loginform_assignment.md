@@ -7,6 +7,12 @@
 ##  다른  viewController로 데이터 전달하기
 
 
+(과제 결과물) <br>
+<img src="https://user-images.githubusercontent.com/60260284/81256291-ffc11b00-906a-11ea-8c3b-c40225e14ca9.gif" width="40%">
+
+
+
+
 
 ```Swift
 

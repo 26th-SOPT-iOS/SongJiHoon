@@ -4,6 +4,11 @@
 
 [이동하기](https://github.com/26th-SOPT-iOS/SongJiHoon/tree/master/2nd_week/SOPT_secondWeek_assignment_1)
 
+(과제 결과물)
+<img src="https://user-images.githubusercontent.com/60260284/81263885-7534e780-907b-11ea-9d69-45e9293cddc5.gif" width="40%" height = "">
+__
+
+
 ##  ID/PW Text Field 설정
 
 

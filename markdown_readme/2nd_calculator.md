@@ -4,6 +4,10 @@
 
 [이동하기](https://github.com/26th-SOPT-iOS/SongJiHoon/tree/master/2nd_week/SOPT_secondWeek_assignment_2)
 
+(과제 결과물)
+<img src="https://user-images.githubusercontent.com/60260284/81260265-9c3beb00-9074-11ea-82b1-137fa3c7232c.gif" width="40%" height = "">
+
+
 ##  IBOutlet Collection 활용하기
 
 

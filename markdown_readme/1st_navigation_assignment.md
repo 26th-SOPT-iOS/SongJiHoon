@@ -8,6 +8,11 @@
 ---
 
 
+(과제 결과물) <br>
+<img src="https://user-images.githubusercontent.com/60260284/81255383-74468a80-9068-11ea-9a37-e9e1250202ab.gif" width="40%" height = "">
+<br><br>
+
+
 ![스크린샷 2020-04-23 오후 3 37 31](https://user-images.githubusercontent.com/60260284/80092136-3a23b600-859d-11ea-9ebc-3f26f14ca8f5.png)
 
 
