@@ -44,10 +44,12 @@ extension CALayer {
 class ViewController: UIViewController {
 
     @IBOutlet weak var myTableView: UITableView!
-    @IBOutlet weak var friendTableView: UITableView!
-    @IBOutlet weak var friendsNumber: UILabel!
+
     
     var friendCollection : [Friend] = []
+    var friendsNumber : Int = 0
+    
+    let sections : [String] = ["Me","Friends"]
     
 
     override func viewDidLoad() {
@@ -57,11 +59,8 @@ class ViewController: UIViewController {
         
         myTableView.delegate = self
         myTableView.dataSource = self
-        myTableView.isScrollEnabled = false
-        myTableView.allowsSelection = false
+
         
-        friendTableView.delegate = self
-        friendTableView.dataSource = self
         
         
         
@@ -135,36 +134,106 @@ extension ViewController: UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        if tableView == friendTableView{
+        if indexPath.section == 0
+        {
+            return 88
+        }
+        else
+        {
             return 62
 
         }
-        else {                  // tableView == myTableView
-            return 86
-        }
+        
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//        if tableView == friendTableView {
+        if indexPath.section == 1{
+            if editingStyle == UITableViewCell.EditingStyle.delete {
+                 friendCollection.remove(at: indexPath.row)
+                 tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+                
+                tableView.reloadData()             // 데이터 반영하기 (삭제 시 , 친구 숫자가 줄어들어야 함 )
+                
+            }
+        }
+
+
+    }
+    
+    
+    
+    
+    
+    
     
 }
 
 extension ViewController:UITableViewDataSource{
+    
+    
+    
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return sections.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        
+        friendsNumber = friendCollection.count
+        let friends_number : String = "  친구 \(friendsNumber)"
+  
+        if section == 1
+        {
+            
+            return friends_number
+        }
+        else
+        {
+            return ""
+        }
+        
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) { // 여기서 헤더 속성 변경
+        if section == 1 {
+            view.tintColor = .white // 배경색 흰색으로 바꾸기
+
+            let header = view as! UITableViewHeaderFooterView
+      
+            header.textLabel?.textColor = .lightGray
+            header.textLabel?.font = UIFont(name: "Helvetica-Bold", size: 11)
+        }
+
+        
+
+
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        self.friendsNumber.text = "\(friendCollection.count)"
         
-        
-        if tableView == friendTableView{
-            return friendCollection.count
-        }
-        else{
+        if section == 0{
             return 1
         }
+        
+        else if section == 1 {
+            return friendCollection.count
+        }
+        
+        else {
+            return 0
+        }
+
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
-        if tableView == friendTableView{
-            
+        if indexPath.section == 1
+        {
             guard let FriendCell = tableView.dequeueReusableCell(withIdentifier: FriendCell.user_identifier, for: indexPath) as? FriendCell
                 else { return UITableViewCell() }
             
@@ -176,25 +245,38 @@ extension ViewController:UITableViewDataSource{
             FriendCell.layer.borderColor = UIColor.white.cgColor
             
             
+            
+            
+            
             return FriendCell
-            
         }
-        
-        else{
             
+        else
+        {
             guard let myCell = tableView.dequeueReusableCell(withIdentifier: FriendCell.my_identifier, for: indexPath) as? FriendCell
                 else { return UITableViewCell() }
             
             
             
-            myCell.setmyInformation(ImageName: "profile8Img", name: "솝트", statusMessage: "나만 없어 고양이..")
+            myCell.setMyInformation(ImageName: "profile8Img", name: "솝트", statusMessage: "나만 없어 고양이..")
             
-      
+
+            myCell.layer.borderColor = UIColor.lightGray.cgColor
+            myCell.layer.borderWidth = 0.5
+
+
+            
+  
+               
             
             return myCell
         }
 
+
+
     }
+    
+    
     
     
     

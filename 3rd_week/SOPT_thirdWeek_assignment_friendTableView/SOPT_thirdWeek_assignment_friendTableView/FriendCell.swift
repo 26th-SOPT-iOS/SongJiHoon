@@ -41,14 +41,7 @@ class FriendCell: UITableViewCell {
     
     
     
-    func setmyInformation(ImageName:String,name:String,statusMessage:String){
-        
-        
-        myProfileImage.image = UIImage(named: ImageName)
-        myName.text = name
-        myStatusMessage.text = statusMessage
-    }
-    
+
     
     func setFriendInformation(ImageName:String,name:String,statusMessage:String){
         userProfileImage.image = UIImage(named: ImageName)
@@ -57,5 +50,15 @@ class FriendCell: UITableViewCell {
         
         
     }
+    
+    
+    func setMyInformation(ImageName:String,name:String,statusMessage:String){
+        myProfileImage.image = UIImage(named: ImageName)
+        myName.text = name
+        myStatusMessage.text = statusMessage
+    
+    
 
+    }
 }
+
