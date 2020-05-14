@@ -2,7 +2,7 @@
 
 # TableView를 이용해 친구목록 만들기
 
-[이동하기](https://github.com/26th-SOPT-iOS/SongJiHoon/tree/master/3rd_week/SOPT_thirdWeek_assignment_friendTableView)
+[이동하기](https://github.com/26th-SOPT-iOS/SongJiHoon/tree/master/3rd_week/SOPT_thirdWeek_assignment_friendTableView%20%EB%B3%B5%EC%82%AC%EB%B3%B8)
 ___
 - 사용 개념 : Tab Bar Controller, TableView
 
