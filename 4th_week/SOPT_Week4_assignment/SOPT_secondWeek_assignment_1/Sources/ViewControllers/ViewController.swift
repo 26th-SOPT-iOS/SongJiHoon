@@ -10,6 +10,10 @@
 import UIKit
 import BEMCheckBox
 
+struct UserDefaultKeys{
+    static let autoLoginCheck = "isAutoLoginChecked"
+    static let token = "token"
+}
 
 extension UITextField{
     
@@ -21,7 +25,7 @@ extension UITextField{
 }
 
     
-class ViewController: UIViewController {    
+class ViewController: UIViewController,BEMCheckBoxDelegate {
 
     @IBOutlet weak var emailTextField: UITextField!
     
@@ -40,6 +44,8 @@ class ViewController: UIViewController {
     
     var is_auto_login : Int = 0
 
+    let checkBox = BEMCheckBox.init(frame: CGRect.init(x: CGFloat(60), y: CGFloat(396+44), width: CGFloat(15), height: CGFloat(15)))
+
     
     
     override func viewDidLoad() {
@@ -51,9 +57,12 @@ class ViewController: UIViewController {
         self.setNavigationBar()
         setCheckBox()
 
+        
         super.viewDidLoad()
         setInput()
         setLabel()
+        
+//        autoLogin()
         
   
         
@@ -61,6 +70,8 @@ class ViewController: UIViewController {
     }
 
 
+    
+    
 
     @IBAction func loginButtonTouch(_ sender: Any) {
         
@@ -73,18 +84,32 @@ class ViewController: UIViewController {
         LoginService.shared.login(id: inputID, pwd: inputPWD) { networkResult in
             switch networkResult {
             case .success(let token):
+                
+
                 guard let token = token as? String else { return }
                 UserDefaults.standard.set(token, forKey: "token")
                 
                 
-                
-                
+                if self.checkBox.on{
+                    let dataSave = UserDefaults.standard
+                    dataSave.setValue(true, forKey: UserDefaultKeys.autoLoginCheck)
+
+
+                    UserDefaults.standard.synchronize()
+                }
+                    
+                UserDefaults.standard.set(token, forKey: UserDefaultKeys.token)
                 
 
 
+                
+                
                 guard let tabbarController = tabStoryBoard.instantiateViewController(identifier:
                     "tabBarStoryBoard") as? UITabBarController else { return }
 
+              
+                
+                
                 tabbarController.modalPresentationStyle = .fullScreen
                 self.present(tabbarController, animated: true, completion: nil)
                 
@@ -111,6 +136,8 @@ class ViewController: UIViewController {
         }
     }
     
+
+    
     
     func showAlertViewController(message : String){
         let alertViewController = UIAlertController(title: "오류", message: message,
@@ -122,6 +149,23 @@ class ViewController: UIViewController {
         
     }
     
+//
+//    func autoLogin() {
+//        if let userid = UserDefaults.standard.string(forKey: "id") {
+//
+//            if let pw = UserDefaults.standard.string(forKey: "pw")  {
+//
+//                //로그인 통신 함수
+//                LoginService.shared.login(id:userid, pwd: pw)
+//                    }
+//                }
+//            }
+//        }
+//    }
+    
+    
+
+
     
     func setTextField(){
         
@@ -140,12 +184,11 @@ class ViewController: UIViewController {
     func setCheckBox(){
         
         
-        let checkBox = BEMCheckBox.init(frame: CGRect.init(x: CGFloat(60), y: CGFloat(396+44), width: CGFloat(15), height: CGFloat(15)))
         
-        checkBox.onAnimationType = BEMAnimationType.fill
-        checkBox.offAnimationType = BEMAnimationType.fill
+        self.checkBox.onAnimationType = BEMAnimationType.fill
+        self.checkBox.offAnimationType = BEMAnimationType.fill
         
-        self.view.addSubview(checkBox)
+        self.view.addSubview(self.checkBox)
     
     }
     
@@ -169,7 +212,6 @@ class ViewController: UIViewController {
         
         self.signupButton.isUserInteractionEnabled = true
         self.signupButton.addGestureRecognizer(labelTap)
-        print("????")
         
         
     }

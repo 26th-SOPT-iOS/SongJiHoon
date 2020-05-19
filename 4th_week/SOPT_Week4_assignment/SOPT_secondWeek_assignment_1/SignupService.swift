@@ -49,4 +49,6 @@ struct SignupService {
         if decodedData.success {return .success(decodedData.message)}
         else { return .requestErr(decodedData.message)}
     }
+    
+
 }
