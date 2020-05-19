@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A96B7B2D-4A77-434E-96DC-0C1EEEBFFD4C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50E3BB7E-BBCB-42CF-91DD-4017235317B1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SOPT_secondWeek_assignment_1/ScrollViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "ScrollViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "50E3BB7E-BBCB-42CF-91DD-4017235317B1 - 101d67abd61ecb57"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SOPT_secondWeek_assignment_1.ScrollViewController.navBar.getter : __C.UINavigationBar"
+                  moduleName = "SOPT_secondWeek_assignment_1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kone/Documents/GitHub/SongJiHoon/2nd_week/SOPT_secondWeek_assignment_1/SOPT_secondWeek_assignment_1/ScrollViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "126">
+               </Location>
+               <Location
+                  uuid = "50E3BB7E-BBCB-42CF-91DD-4017235317B1 - 67daec1da821775b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SOPT_secondWeek_assignment_1.ScrollViewController.navBar.setter : __C.UINavigationBar"
+                  moduleName = "SOPT_secondWeek_assignment_1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kone/Documents/GitHub/SongJiHoon/2nd_week/SOPT_secondWeek_assignment_1/SOPT_secondWeek_assignment_1/ScrollViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "50E3BB7E-BBCB-42CF-91DD-4017235317B1 - 453f0b3c0bd88a54"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SOPT_secondWeek_assignment_1.ScrollViewController.navBar.modify : __C.UINavigationBar"
+                  moduleName = "SOPT_secondWeek_assignment_1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kone/Documents/GitHub/SongJiHoon/2nd_week/SOPT_secondWeek_assignment_1/SOPT_secondWeek_assignment_1/ScrollViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "50E3BB7E-BBCB-42CF-91DD-4017235317B1 - 76389f3825599156"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SOPT_secondWeek_assignment_1.ScrollViewController.navBar.modify : __C.UINavigationBar with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SOPT_secondWeek_assignment_1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kone/Documents/GitHub/SongJiHoon/2nd_week/SOPT_secondWeek_assignment_1/SOPT_secondWeek_assignment_1/ScrollViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "50E3BB7E-BBCB-42CF-91DD-4017235317B1 - 71dbeec587a95a9f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SOPT_secondWeek_assignment_1.ScrollViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; SOPT_secondWeek_assignment_1.ScrollViewController"
+                  moduleName = "SOPT_secondWeek_assignment_1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kone/Documents/GitHub/SongJiHoon/2nd_week/SOPT_secondWeek_assignment_1/SOPT_secondWeek_assignment_1/ScrollViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "50E3BB7E-BBCB-42CF-91DD-4017235317B1 - 81409727eda713cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SOPT_secondWeek_assignment_1.ScrollViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SOPT_secondWeek_assignment_1.ScrollViewController&gt;"
+                  moduleName = "SOPT_secondWeek_assignment_1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kone/Documents/GitHub/SongJiHoon/2nd_week/SOPT_secondWeek_assignment_1/SOPT_secondWeek_assignment_1/ScrollViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "100AAB6A-B964-4BD8-AD94-56D2D84828E1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SOPT_secondWeek_assignment_1/ScrollViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "6"
+            endingLineNumber = "6"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
