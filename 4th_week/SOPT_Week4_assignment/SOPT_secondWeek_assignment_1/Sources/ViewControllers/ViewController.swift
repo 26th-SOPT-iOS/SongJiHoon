@@ -15,6 +15,7 @@ struct UserDefaultKeys{
     static let token = "token"
 }
 
+
 extension UITextField{
     
     func addLeftPadding() {
@@ -36,31 +37,34 @@ class ViewController: UIViewController,BEMCheckBoxDelegate {
     @IBOutlet weak var signupButton: UILabel!
     
     
+    @IBOutlet weak var autologinLabel: UILabel!
     
     var userid : String?
     var userpw : String?
     
-    var handle:Int = 0
+    var handle: Int = 0
     
     var is_auto_login : Int = 0
-
-    let checkBox = BEMCheckBox.init(frame: CGRect.init(x: CGFloat(60), y: CGFloat(396+44), width: CGFloat(15), height: CGFloat(15)))
-
+    
+    let autoLogincheckBox = BEMCheckBox.init(frame: CGRect.init(x: CGFloat(0), y: CGFloat(0), width: CGFloat(15), height: CGFloat(15)))
+    
     
     
     override func viewDidLoad() {
         
         
-    
+
         setTextField()
        
         self.setNavigationBar()
         setCheckBox()
+        autoLogincheckBox.delegate = self
 
         
         super.viewDidLoad()
         setInput()
         setLabel()
+        autoLoginCheck()
         
 //        autoLogin()
         
@@ -85,31 +89,16 @@ class ViewController: UIViewController,BEMCheckBoxDelegate {
             switch networkResult {
             case .success(let token):
                 
-
-                guard let token = token as? String else { return }
-                UserDefaults.standard.set(token, forKey: "token")
-                
-                
-                if self.checkBox.on{
-                    let dataSave = UserDefaults.standard
-                    dataSave.setValue(true, forKey: UserDefaultKeys.autoLoginCheck)
-
-
-                    UserDefaults.standard.synchronize()
+                if self.autoLogincheckBox.on {
+                    UserDefaults.standard.set(true, forKey: UserDefaultKeys.autoLoginCheck)
                 }
-                    
+                
                 UserDefaults.standard.set(token, forKey: UserDefaultKeys.token)
                 
 
-
-                
-                
                 guard let tabbarController = tabStoryBoard.instantiateViewController(identifier:
                     "tabBarStoryBoard") as? UITabBarController else { return }
 
-              
-                
-                
                 tabbarController.modalPresentationStyle = .fullScreen
                 self.present(tabbarController, animated: true, completion: nil)
                 
@@ -149,22 +138,41 @@ class ViewController: UIViewController,BEMCheckBoxDelegate {
         
     }
     
+    func autoLoginCheck(){
+        if UserDefaults.standard.bool(forKey: UserDefaultKeys.autoLoginCheck) {
+            // UserDefaultKeys 가 존재하면 AutoLogin 처리
+            
+            let tabStoryBoard = UIStoryboard(name: "TableView", bundle: nil) // 탭 스토리 보드 정의
+            
+            guard let tabbarController = tabStoryBoard.instantiateViewController(identifier:
+                  "tabBarStoryBoard") as? UITabBarController else { return }
+
+            
+              
+              
+              tabbarController.modalPresentationStyle = .fullScreen // 풀 스크린으로 모달 띄우기
+              self.present(tabbarController, animated: true, completion: nil)
+                
+        }
+    }
+    
+//    func didTap(_ checkBox: BEMCheckBox) {
 //
-//    func autoLogin() {
-//        if let userid = UserDefaults.standard.string(forKey: "id") {
+//        if is_auto_login == 0
+//        {
+//            self.autoLogincheckBox.setOn(true, animated:true)
+//            is_auto_login = 1
+//            print("SET TRUE")
+//        }
+//        else
+//        {
+//            self.autoLogincheckBox.setOn(false, animated:true)
 //
-//            if let pw = UserDefaults.standard.string(forKey: "pw")  {
+//            is_auto_login = 0
+//            print("SET FALSE")
 //
-//                //로그인 통신 함수
-//                LoginService.shared.login(id:userid, pwd: pw)
-//                    }
-//                }
-//            }
 //        }
 //    }
-    
-    
-
 
     
     func setTextField(){
@@ -185,11 +193,19 @@ class ViewController: UIViewController,BEMCheckBoxDelegate {
         
         
         
-        self.checkBox.onAnimationType = BEMAnimationType.fill
-        self.checkBox.offAnimationType = BEMAnimationType.fill
+        self.autoLogincheckBox.onAnimationType = BEMAnimationType.fill
+        self.autoLogincheckBox.offAnimationType = BEMAnimationType.fill
         
-        self.view.addSubview(self.checkBox)
-    
+        
+        
+        self.view.addSubview(self.autoLogincheckBox)
+        self.autoLogincheckBox.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.view.addConstraint(NSLayoutConstraint(item: self.autoLogincheckBox, attribute: .top, relatedBy: .equal, toItem: self.passwordTextField, attribute: .bottom, multiplier: 1, constant: 12))
+        self.view.addConstraint(NSLayoutConstraint(item: self.autoLogincheckBox, attribute: .left, relatedBy: .equal, toItem: self.view, attribute: .left, multiplier: 1, constant: 61))
+
+
+        
     }
     
     

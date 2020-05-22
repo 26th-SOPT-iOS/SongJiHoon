@@ -52,11 +52,6 @@ class SignupViewController: UIViewController {
             switch networkResult {
             case .success:
                 
- 
-
-                
-                
-                
                 guard let receiveViewController =
                     self.storyboard?.instantiateViewController(identifier: "loginViewController") as? ViewController else {return}
                 
@@ -65,10 +60,6 @@ class SignupViewController: UIViewController {
                 receiveViewController.userpw = inputPWD
 
                 
-                
-
-                
-
                 receiveViewController.modalPresentationStyle = .fullScreen
                 self.present(receiveViewController, animated: true, completion: nil)
                 receiveViewController.loginButton.sendActions(for: .touchUpInside)      // 버튼 클릭하게 하도록 코드 작성

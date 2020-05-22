@@ -30,7 +30,16 @@ class ScrollViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    
+    
+    
+    @IBAction func logoutButton(_ sender: Any) { // 로그아웃
+        
+        UserDefaults.standard.set(false, forKey: UserDefaultKeys.autoLoginCheck)
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
     /*
     // MARK: - Navigation
 

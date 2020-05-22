@@ -284,6 +284,9 @@
                                                 <state key="normal" title="로그아웃">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="logoutButton:" destination="aTr-dr-RtE" eventType="touchUpInside" id="rLG-PF-hmF"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
